@@ -52,10 +52,12 @@ Publish tools: `INSTAGRAM_POST_IG_USER_MEDIA` (create container) → `INSTAGRAM_
 
 ### Auto-posting after approval
 
-Decided 2026-09-24: **queue for the recommended time, fire automatically later** (not publish-immediately-on-approval). Built:
+Decided 2026-09-24: **queue for the recommended time, fire automatically later** (not publish-immediately-on-approval). Built and live:
 
 1. **The queue** — `queue/` in this folder. One Markdown file per scheduled post (`status: pending` → `approved` → `published`/`failed`). Full format in `queue/README.md`. When Social Media Manager recommends a schedule for content that's ready, create the queue file with `status: pending`; Nhi flips it to `approved` (directly, or by telling Claude to after reviewing).
-2. **The cron routine** — checks `queue/` every 15 minutes for `status: approved` items whose `scheduled_time` has passed, publishes each via the Composio tools above, and updates that file's status to `published` or `failed`. Never touches `pending` items or anything already `published`. Logs every run to `queue/log.md`.
+2. **The cron routine** — [Social Media Manager - Publish Queue](https://claude.ai/code/routines/trig_011C2Gm74X83bKnc1tVLJnYp) (`trig_011C2Gm74X83bKnc1tVLJnYp`). Runs **hourly, at :58 past the hour** (`58 * * * *` UTC) — not every 15 minutes as originally discussed; cloud routines have a 1-hour minimum interval, discovered and confirmed with Nhi 2026-09-24. Checks `queue/` for `status: approved` items whose `scheduled_time` has passed, publishes each via the Composio tools above, updates that file's status to `published` or `failed`, and **commits + pushes the changes back to `main`** (it runs from a fresh clone of `github.com/rosecoco278-design/AIS-OS`, a private repo — it can't see local files, only what's pushed). Never touches `pending` items or anything already `published`. Logs every run to `queue/log.md`.
+
+**Because the routine works from its own clone, not Nhi's local checkout:** after approving a post locally, that edit has to reach GitHub (commit + push) before the routine can see it — a local-only "approved" flip does nothing until pushed. Likewise, `git pull` locally is needed to see a status the routine flipped to `published`/`failed`. This sync requirement is a real property of the design, not a bug — call it out to Nhi if a queue item looks stuck.
 
 This is the one piece of this agent that acts on real public accounts without Nhi present at fire time — the entire safety property rests on the routine only ever acting on `status: approved`, never inferring approval from anything else.
 
@@ -89,4 +91,4 @@ For each scheduling recommendation:
 
 ## Status
 
-No skill built yet. Connected: Google Calendar (reminders), Instagram (`@rosecoco278` via Composio), LinkedIn (`nhile-2708` via Composio) — all confirmed 2026-09-24. The approval queue and cron publish routine are built and live as of 2026-09-24 (checks every 15 minutes; see "Auto-posting" above and `queue/README.md`). Note the routine itself runs as a Claude Code cloud routine — verify a Codex equivalent exists before assuming this fires from Codex too. Substack is manual by design, not a gap. The LinkedIn/Content-Creator content-ownership question above is still unresolved.
+No skill built yet. Connected: Google Calendar (reminders), Instagram (`@rosecoco278` via Composio), LinkedIn (`nhile-2708` via Composio) — all confirmed 2026-09-24. The approval queue and cron publish routine are built and live as of 2026-09-24, running hourly (see "Auto-posting" above and `queue/README.md`). Note the routine itself runs as a Claude cloud routine tied to Nhi's claude.ai account, not this Codex session — Codex can still read/edit queue files, but doesn't independently fire the publish routine. Substack is manual by design, not a gap. The LinkedIn/Content-Creator content-ownership question above is still unresolved.
