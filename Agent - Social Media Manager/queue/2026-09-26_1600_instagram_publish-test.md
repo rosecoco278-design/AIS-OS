@@ -1,8 +1,10 @@
 ---
 platform: instagram
 account: ai-business-lab
-status: approved
+status: published
 scheduled_time: 2026-09-26T16:00:00+08:00
+published_at: 2026-09-26T08:34:15Z
+post_id: "18109294745152104"
 ---
 
 # Caption
