@@ -41,6 +41,8 @@ https://a-public-url-meta-or-linkedin-can-fetch/image.jpg
 
 Instagram requires `Media` to be a public `https://` URL with no query parameters (see `../CLAUDE.md` → Execution reality). LinkedIn can take a direct file reference instead — note that inline if it applies.
 
+A. Social Squad also keeps `content_hash:` in the front matter (a fingerprint of the content piece's caption when this post was made or last updated). It is set by the dashboard and by the guard on Alexa's chat writes, and is how a later edit to the piece is noticed. The routine ignores it; do not edit it by hand.
+
 After the routine acts, it appends these fields to the front matter rather than editing anything else: `published_at`, and either the platform's post ID/permalink (success) or `error` (failure).
 
 A run gets one line in `log.md` only if a post was due (published, failed, or skipped for a stated reason). A run with nothing due leaves no trace in the repo: no log line, no commit, no notification. The routine's run list on claude.ai already records every run. (Changed 2026-09-24: logging empty runs meant a commit and push every hour, which is what kept failing and notifying when GitHub access was missing.)
