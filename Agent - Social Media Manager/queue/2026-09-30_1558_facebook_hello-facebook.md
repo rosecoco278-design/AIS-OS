@@ -3,7 +3,7 @@ platform: facebook
 account: ai-business-lab
 content: 2026-09-30-hello-facebook.md
 status: approved
-scheduled_time: 2026-09-30T15:58:00+08:00
+scheduled_time: 2026-09-30T10:00:00+08:00
 ---
 
 # Caption
