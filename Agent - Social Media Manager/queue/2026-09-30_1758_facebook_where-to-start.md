@@ -2,8 +2,10 @@
 platform: facebook
 account: ai-business-lab
 content: 2026-09-25-where-to-start.md
-status: approved
+status: published
 scheduled_time: 2026-09-30T17:58:00+08:00
+published_at: 2026-09-30T09:59:00Z
+post_id: 1372012515990356_122100742503493199
 ---
 
 # Caption

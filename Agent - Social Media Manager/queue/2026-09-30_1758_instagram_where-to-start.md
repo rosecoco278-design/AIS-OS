@@ -2,9 +2,11 @@
 platform: instagram
 account: ai-business-lab
 content: 2026-09-25-where-to-start.md
-status: approved
+status: published
 scheduled_time: 2026-09-30T17:58:00+08:00
 content_hash: 5d75f7e8
+published_at: 2026-09-30T10:00:00Z
+post_id: 18051916367661677
 ---
 
 # Caption
