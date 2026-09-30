@@ -1,5 +1,5 @@
 {
-  "_about": "Where content can go. Edited in A. Social Squad (Connections tab). The publish routine reads this file: an Instagram or LinkedIn queue post publishes only if its `account:` matches an `auto` channel here.",
+  "_about": "Where content can go. Edited in the dashboard (Guidance tab). The publish routine reads this file: an Instagram, LinkedIn or Facebook queue post publishes only if its `account:` matches an `auto` channel here.",
   "channels": [
     {
       "id": "ai-business-lab-substack",
@@ -27,7 +27,7 @@
       "alias": "nhi-personal",
       "contentChannel": "linkedin",
       "connection": "connected",
-      "checked": "2026-09-24",
+      "checked": "2026-09-30",
       "identity": "Rose - Nhi Le",
       "note": "",
       "author": "urn:li:person:TvjeUIiBis"
@@ -43,7 +43,7 @@
       "alias": "coolcat",
       "contentChannel": "coolcat",
       "connection": "connected",
-      "checked": "2026-09-24",
+      "checked": "2026-09-30",
       "identity": "@rosecoco278",
       "note": "Instagram needs the image or video at a public https link."
     },
@@ -58,9 +58,25 @@
       "alias": "ai-business-lab",
       "contentChannel": "",
       "connection": "connected",
-      "checked": "2026-09-24",
+      "checked": "2026-09-30",
       "identity": "@lab.aibusiness",
       "note": "New account, no posts yet. Its first real post is a test: use a low-stakes one."
+    },
+    {
+      "id": "ai-business-lab-facebook",
+      "name": "AI Business Lab (Facebook)",
+      "brand": "AI Business Lab",
+      "platform": "facebook",
+      "handle": "AI Business LAB",
+      "url": "https://www.facebook.com/profile.php?id=61594795986161",
+      "mode": "auto",
+      "alias": "ai-business-lab",
+      "contentChannel": "",
+      "connection": "connected",
+      "checked": "2026-09-30",
+      "identity": "AI Business LAB",
+      "pageId": "1372012515990356",
+      "note": "Page created and Composio connected. Flipped to auto 2026-09-30 for the first low-stakes test post: review the draft on the Content tab (2026-09-30-hello-facebook.md), tick this channel, generate its image and approve when ready. Nothing posts until you do."
     },
     {
       "id": "coolcat-youtube",
@@ -73,7 +89,7 @@
       "alias": "coolcat-youtube",
       "contentChannel": "",
       "connection": "connected",
-      "checked": "2026-09-24",
+      "checked": "2026-09-30",
       "identity": "CoolCat (UCgwwSxBPECfM5c_pwfEstFA)",
       "note": "Connected in Composio, but automatic upload is untested, so upload by hand for now."
     },
@@ -88,9 +104,24 @@
       "alias": "ai-business-lab-youtube",
       "contentChannel": "",
       "connection": "connected",
-      "checked": "2026-09-24",
+      "checked": "2026-09-30",
       "identity": "AI BUSINESS LAB (UCcAzMiZMpoyT1hgROLdbY9g)",
       "note": "Connected in Composio, but automatic upload is untested, so upload by hand for now."
+    },
+    {
+      "id": "coolcal-tiktok",
+      "name": "CoolCal (Tiktok)",
+      "brand": "CoolCat",
+      "platform": "other",
+      "handle": "@coolcat",
+      "url": "https://www.tiktok.com/@coolcat2708",
+      "mode": "manual",
+      "alias": "",
+      "contentChannel": "coolcat",
+      "connection": "manual",
+      "checked": "",
+      "identity": "",
+      "note": ""
     }
   ]
 }
