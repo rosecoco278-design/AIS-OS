@@ -2,8 +2,10 @@
 platform: facebook
 account: ai-business-lab
 content: 2026-09-30-hello-facebook.md
-status: approved
+status: published
 scheduled_time: 2026-09-30T10:00:00+08:00
+published_at: 2026-09-30T03:03:07Z
+post_id: "1372012515990356_122100548031493199"
 ---
 
 # Caption

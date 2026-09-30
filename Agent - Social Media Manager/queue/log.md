@@ -6,3 +6,4 @@ Append-only. One line per run that had a post due (runs with nothing due are not
 
 ---
 2026-09-26 08:34 — 1 due, 1 published, 0 failed (published: 2026-09-26_1600_instagram_publish-test.md)
+2026-09-30 03:03 — 1 due, 1 published, 0 failed (published: 2026-09-30_1558_facebook_hello-facebook.md)
