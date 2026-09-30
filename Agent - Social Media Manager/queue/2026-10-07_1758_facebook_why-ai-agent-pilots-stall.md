@@ -2,7 +2,7 @@
 platform: facebook
 account: ai-business-lab
 content: 2026-09-24-why-ai-agent-pilots-stall.md
-status: approved
+status: pending
 scheduled_time: 2026-10-07T17:58:00+08:00
 ---
 
