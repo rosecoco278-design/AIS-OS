@@ -3,7 +3,7 @@ platform: facebook
 account: ai-business-lab
 content: 2026-09-30-first-10-minutes-with-ai.md
 status: approved
-scheduled_time: 2026-10-14T17:58:00+08:00
+scheduled_time: 2026-10-02T17:58:00+08:00
 ---
 
 # Caption
