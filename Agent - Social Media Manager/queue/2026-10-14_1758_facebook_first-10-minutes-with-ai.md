@@ -2,8 +2,10 @@
 platform: facebook
 account: ai-business-lab
 content: 2026-09-30-first-10-minutes-with-ai.md
-status: approved
+status: published
 scheduled_time: 2026-10-02T17:58:00+08:00
+published_at: 2026-10-02T10:00:21Z
+post_id: 1372012515990356_122102619441493199
 ---
 
 # Caption

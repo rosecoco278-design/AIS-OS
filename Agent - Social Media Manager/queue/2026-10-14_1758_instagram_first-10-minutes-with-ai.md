@@ -2,8 +2,9 @@
 platform: instagram
 account: ai-business-lab
 content: 2026-09-30-first-10-minutes-with-ai.md
-status: approved
+status: failed
 scheduled_time: 2026-10-02T17:58:00+08:00
+error: "Instagram API error (status 400): The caption was too long. - The submitted caption was 3,386 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption."
 ---
 
 # Caption
