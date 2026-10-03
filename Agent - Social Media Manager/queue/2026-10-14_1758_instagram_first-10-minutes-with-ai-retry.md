@@ -2,9 +2,11 @@
 platform: instagram
 account: ai-business-lab
 content: 2026-09-30-first-10-minutes-with-ai.md
-status: approved
+status: published
 scheduled_time: 2026-10-03T15:58:00+08:00
 content_hash: 27a12609
+published_at: 2026-10-03T08:00:28Z
+post_id: 18022096712716390
 ---
 
 # Caption

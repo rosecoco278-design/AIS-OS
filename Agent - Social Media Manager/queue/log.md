@@ -9,3 +9,4 @@ Append-only. One line per run that had a post due (runs with nothing due are not
 2026-09-30 03:03 — 1 due, 1 published, 0 failed (published: 2026-09-30_1558_facebook_hello-facebook.md)
 2026-09-30 09:59 — 2 due, 2 published, 0 failed (published: 2026-09-30_1758_facebook_where-to-start.md, 2026-09-30_1758_instagram_where-to-start.md)
 2026-10-02 10:00 — 2 due, 1 published, 1 failed (published: 2026-10-14_1758_facebook_first-10-minutes-with-ai.md; failed: 2026-10-14_1758_instagram_first-10-minutes-with-ai.md — caption exceeded Instagram's 2,200-character limit)
+2026-10-03 08:00 — 1 due, 1 published, 0 failed (published: 2026-10-14_1758_instagram_first-10-minutes-with-ai-retry.md)
